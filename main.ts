@@ -1,10 +1,28 @@
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
-        basic.showIcon(IconNames.Giraffe)
+        basic.showLeds(`
+            . # # . .
+            . . # . .
+            . . # . .
+            . . # # #
+            . . # . #
+            `)
         basic.pause(1000)
-        basic.showIcon(IconNames.Happy)
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            # . . . #
+            # # # # #
+            `)
         basic.pause(1000)
-        basic.showIcon(IconNames.Snake)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # # . . #
+            . # # # #
+            . . . . .
+            `)
         basic.pause(1000)
     }
 })
